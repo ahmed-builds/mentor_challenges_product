@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+
+:root {
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--Cream);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+p {
+    font-size: 14px;
+    padding: 0;
+}
+.container {
+    background-color: var(--White);
+    border-radius: 1rem;
+    height: 500px;
+    width: 44vw;
+}
+.img_container {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.img_container img {
+    height: 100%;
+    width: auto;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+.txt_container{
+    padding: 1.5rem;
+    width: 50%;
+    float: right;
+}
+.category{
+    font-family: "Montserrat";
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+    font-size: 12px;
+    color: var(--Dark-grayish-blue);
+    font-weight: 500;
+    margin: 1rem 0rem;
+}
+.itemName{
+    font-family: "Fraunces";
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    margin: 1.5rem 0rem;
+}
+.itemDesc{
+    font-family: "Montserrat";
+    color: var(--Dark-grayish-blue);
+    line-height: 1.5rem;
+    font-weight: 500;
+    margin: 0.8rem 0rem;
+    font-size: 1.05rem;
+}
+.itemPrices{
+    display: inline;
+    float: left;
+    width: 100%;
+    margin: 1.2rem 0rem;
+}
+.discountedPrice{
+    float: left;
+    font-family: "Fraunces";
+    font-weight: 700;
+    font-size: 2.2rem;
+    color: var(--Dark-cyan);
+}
+.originalPrice{
+    font-family: "Montserrat";
+    padding: 0.5rem;
+    text-align: center;
+    top: 5px;
+    position: relative;
+    text-decoration: line-through;
+    color: var(--Dark-grayish-blue);
+}
+.addToCart {
+    border: 0;
+    background: var(--Dark-cyan);
+    color: var(--White);
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+.addToCart:hover {
+    background-color: var(--Very-dark-blue);
+    cursor: pointer;
+}
+.addToCart img {
+    vertical-align: middle;
+    padding: 0rem 0.5rem;
+}
